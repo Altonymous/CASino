@@ -1,7 +1,7 @@
 require 'user_agent'
 
 class CASino::TicketGrantingTicket < ActiveRecord::Base
-  attr_accessible :ticket, :user_agent, :awaiting_two_factor_authentication, :long_term
+  # attr_accessible :ticket, :user_agent, :awaiting_two_factor_authentication, :long_term
   validates :ticket, uniqueness: true
 
   belongs_to :user
